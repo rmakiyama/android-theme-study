@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.ThemeStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
 
-    <style name="ThemeStudy" parent="Base.ThemeStudy"/>
+    <style name="Base.ThemeStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+    </style>
+
+    <style name="ThemeStudy" parent="Base.ThemeStudy" />
+
+    <style name="ThemeStudy.Premium">
+        <item name="colorPrimary">#f44336</item>
+        <item name="colorSecondary">#ffc107</item>
+    </style>
+
+    <style name="ThemeStudy.Etc">
+        <item name="colorPrimary">#36f443</item>
+        <item name="colorSecondary">#07ffc1</item>
+    </style>
 </resources>

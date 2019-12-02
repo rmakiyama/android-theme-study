@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <!-- ex. premium   -->
+    <color name="colorPrimaryPremium">#f44336</color>
+    <color name="colorSecondaryPremium">#ffc107</color>
+    <!-- etc... -->
+    <color name="colorPrimaryEtc">#36f443</color>
+    <color name="colorSecondaryEtc">#07ffc1</color>
 </resources>

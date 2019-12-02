@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // 条件に応じてテーマを設定
+        setTheme(if (isPremium()) R.style.ThemeStudy_Premium else R.style.ThemeStudy)
+
         setSupportActionBar(binding.toolbar)
 
         val appBarConfiguration = AppBarConfiguration(navController.graph)
@@ -51,4 +54,6 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
+    private fun isPremium(): Boolean = true
 }
