@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.ThemeStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+    <style name="Base.ThemeStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#f44336</item>
+        <item name="colorPrimaryVariant">#ba000d</item>
+        <item name="colorOnPrimary">#80deea</item>
+        <item name="colorSecondary">#00c853</item>
+        <item name="colorSecondaryVariant">#009624</item>
+        <item name="colorOnSecondary">#ce93d8</item>
+        <item name="colorError">#03a9f4</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">#ff5252</item>
+        <item name="android:colorBackground">#9fa8da</item>
+        <item name="colorOnBackground">#eeff41</item>
+    </style>
 
     <style name="ThemeStudy" parent="Base.ThemeStudy"/>
 </resources>
