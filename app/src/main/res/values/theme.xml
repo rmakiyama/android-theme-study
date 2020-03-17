@@ -2,5 +2,7 @@
 <resources>
     <style name="Base.ThemeStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
 
-    <style name="ThemeStudy" parent="Base.ThemeStudy"/>
+    <style name="ThemeStudy" parent="Base.ThemeStudy">
+        <item name="colorControlNormal">#FF0000</item>
+    </style>
 </resources>
