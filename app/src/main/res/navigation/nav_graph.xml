@@ -14,6 +14,10 @@
         <action
             android:id="@+id/action_home_to_dialog_case"
             app:destination="@id/dialog_case" />
+
+        <action
+            android:id="@+id/action_home_to_pro_case"
+            app:destination="@id/pro_case" />
     </fragment>
 
     <fragment
@@ -21,4 +25,10 @@
         android:name="com.rmakiyama.androidthemestudy.ui.cases.dialog.DialogCaseFragment"
         android:label="DialogCase"
         tools:layout="@layout/fragment_dialog_case" />
+
+    <fragment
+        android:id="@+id/pro_case"
+        android:name="com.rmakiyama.androidthemestudy.ui.cases.pro.ProCaseFragment"
+        android:label="ProCase"
+        tools:layout="@layout/fragment_pro_case" />
 </navigation>

@@ -4,4 +4,9 @@
     <color name="app_purple_700">#3700B3</color>
     <color name="app_teal_200">#03DAC5</color>
     <color name="app_teal_700">#008966</color>
+
+    <color name="app_orange_500">#ff9800</color>
+    <color name="app_orange_700">#f57c00</color>
+    <color name="app_pink_500">#e91e63</color>
+    <color name="app_pink_700">#c2185b</color>
 </resources>

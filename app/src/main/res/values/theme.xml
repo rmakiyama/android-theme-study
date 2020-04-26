@@ -16,6 +16,10 @@
     </style>
 
     <style name="AndroidThemeStudy.Pro">
-
+        <item name="colorPrimary">@color/app_orange_500</item>
+        <item name="colorPrimaryVariant">@color/app_orange_500</item>
+        <item name="colorSecondary">@color/app_pink_500</item>
+        <item name="colorSecondaryVariant">@color/app_pink_700</item>
+        <item name="colorSurface">#505021</item>
     </style>
 </resources>

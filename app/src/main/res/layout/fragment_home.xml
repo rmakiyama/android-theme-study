@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRO設定切り替え"
+        app:layout_constraintBottom_toTopOf="@id/cases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cases"
         android:layout_width="0dp"
@@ -18,6 +28,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_pro"
         tools:listitem="@layout/item_case_card" />
 </androidx.constraintlayout.widget.ConstraintLayout>
