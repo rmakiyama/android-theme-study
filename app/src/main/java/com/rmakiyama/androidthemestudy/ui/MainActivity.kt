@@ -4,14 +4,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.NavController
-import androidx.navigation.NavDestination
 import androidx.navigation.Navigation
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.rmakiyama.androidthemestudy.R
 import com.rmakiyama.androidthemestudy.databinding.ActivityMainBinding
-import com.rmakiyama.androidthemestudy.ui.home.HomeFragmentDirections
 import dagger.android.support.DaggerAppCompatActivity
-import java.util.UUID
 
 class MainActivity : DaggerAppCompatActivity() {
 
@@ -26,18 +23,6 @@ class MainActivity : DaggerAppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         setupActionBarWithNavController(navController)
-
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            onDestinationChange(destination)
-        }
-
-        binding.fab.setOnClickListener {
-            navController.navigate(
-                HomeFragmentDirections.actionHomeToDetail(
-                    UUID.randomUUID().toString()
-                )
-            )
-        }
     }
 
     override fun onSupportNavigateUp() = navController.navigateUp()
@@ -51,13 +36,6 @@ class MainActivity : DaggerAppCompatActivity() {
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    private fun onDestinationChange(destination: NavDestination) {
-        when (destination.id) {
-            R.id.home -> binding.fab.show()
-            else -> binding.fab.hide()
         }
     }
 }

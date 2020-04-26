@@ -9,4 +9,13 @@
     </style>
 
     <style name="AndroidThemeStudy" parent="Base.AndroidThemeStudy" />
+
+    <style name="ThemeOverlay.AndroidThemeStudy.Dialog" parent="ThemeOverlay.MaterialComponents.Dark">
+        <!-- ボタンの色はcolorPrimaryを使うのでここも変えてみる -->
+        <item name="colorPrimary">?attr/colorSecondary</item>
+    </style>
+
+    <style name="AndroidThemeStudy.Pro">
+
+    </style>
 </resources>

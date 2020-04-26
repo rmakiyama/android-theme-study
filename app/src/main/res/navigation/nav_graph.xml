@@ -12,18 +12,13 @@
         tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_home_to_detail"
-            app:destination="@id/detail" />
+            android:id="@+id/action_home_to_dialog_case"
+            app:destination="@id/dialog_case" />
     </fragment>
 
     <fragment
-        android:id="@+id/detail"
-        android:name="com.rmakiyama.androidthemestudy.ui.detail.DetailFragment"
-        android:label="Detail"
-        tools:layout="@layout/fragment_detail">
-
-        <argument
-            android:name="id"
-            app:argType="string" />
-    </fragment>
+        android:id="@+id/dialog_case"
+        android:name="com.rmakiyama.androidthemestudy.ui.cases.dialog.DialogCaseFragment"
+        android:label="DialogCase"
+        tools:layout="@layout/fragment_dialog_case" />
 </navigation>

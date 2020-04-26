@@ -2,7 +2,7 @@ package com.rmakiyama.androidthemestudy.ui
 
 import com.rmakiyama.androidthemestudy.di.AssistedInjectModule
 import com.rmakiyama.androidthemestudy.di.PageScope
-import com.rmakiyama.androidthemestudy.ui.detail.DetailFragment
+import com.rmakiyama.androidthemestudy.ui.cases.dialog.DialogCaseFragment
 import com.rmakiyama.androidthemestudy.ui.home.HomeFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -19,5 +19,5 @@ abstract class MainActivityModule {
 
     @PageScope
     @ContributesAndroidInjector(modules = [AssistedInjectModule::class])
-    abstract fun contributeDetailFragment(): DetailFragment
+    abstract fun contributeDialogCaseFragment(): DialogCaseFragment
 }

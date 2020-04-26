@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.cases.dialog.DialogCaseFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="AlertDialogをそのまま表示"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contextそのまま" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/context_theme_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="ContextThemeWrapper" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Dialogにカスタムビューを表示"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/normal_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contextそのまま" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inflater_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inflaterそのまま" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/context_theme_wrapper_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="ContextThemeWrapper使う" />
+
+</LinearLayout>
