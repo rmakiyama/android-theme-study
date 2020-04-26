@@ -1,6 +1,6 @@
 # android-theme-study
 
-AndroidのThemeを試すリポジトリ
+AndroidのThemeを試すリポジトリ  
 <img src="arts/home.png" height="320px" />
 
 ## 扱っているもの
@@ -52,7 +52,7 @@ override fun onCreateView(
 }
 ```
 
-`onCreateView`で`inflater`に使うContextを`ContextThemeWrapper`を使ってthemeを置き換えているだけ。
+`onCreateView`で`inflater`に使うContextを`ContextThemeWrapper`を使ってthemeを置き換えているだけ。  
 置き換えていると言っても、指定したtheme attributesのみ上書きという挙動になる。
 
 ### 3. ContextThemeWrapperでtheme attributesを置き換える
@@ -74,8 +74,8 @@ override fun onCreateView(
 </resources>
 ```
 
-ホーム画面とAttributeCaseのリストにはそれぞれ`?attr/marginContent`と`?attr/titleTextSize`を設定している。
-AttributeCasのFragmentでは`AndroidThemeStudy.Dense`のテーマを使っているため、同じtheme attributesを使っているホーム画面のリストとは違ったマージン・文字サイズが適用される。
+ホーム画面とAttributeCaseのリストにはそれぞれ`?attr/marginContent`と`?attr/titleTextSize`を設定している。  
+AttributeCaseのFragmentでは`AndroidThemeStudy.Dense`のテーマを使っているため、同じtheme attributesを使っているホーム画面のリストとは違ったマージン・文字サイズが適用される。
 
 ```
 <style name="AndroidThemeStudy.Dense">
