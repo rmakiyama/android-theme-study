@@ -42,6 +42,7 @@ class HomeFragment : DaggerFragment(R.layout.fragment_home) {
         when (case) {
             Case.DIALOG -> findNavController().navigate(R.id.dialog_case)
             Case.PRO -> findNavController().navigate(R.id.pro_case)
+            Case.ATTRIBUTE -> findNavController().navigate(R.id.attribute_case)
         }
     }
 }

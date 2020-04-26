@@ -18,6 +18,10 @@
         <action
             android:id="@+id/action_home_to_pro_case"
             app:destination="@id/pro_case" />
+
+        <action
+            android:id="@+id/action_home_to_attribute_case"
+            app:destination="@id/attribute_case" />
     </fragment>
 
     <fragment
@@ -31,4 +35,10 @@
         android:name="com.rmakiyama.androidthemestudy.ui.cases.pro.ProCaseFragment"
         android:label="ProCase"
         tools:layout="@layout/fragment_pro_case" />
+
+    <fragment
+        android:id="@+id/attribute_case"
+        android:name="com.rmakiyama.androidthemestudy.ui.cases.attribute.AttributeCaseFragment"
+        android:label="AttributeCase"
+        tools:layout="@layout/fragment_attribute_case" />
 </navigation>
